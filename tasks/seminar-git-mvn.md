@@ -1,7 +1,16 @@
 ## Seminar Git & Maven
 
 **Task 01 (Git)**  
-Your first task is to fork PA165 project and clone it to your environment. Then you should setup your local repository to use original PA165 project for pull and your forked project for push (https://help.github.com/articles/configuring-a-remote-for-a-fork/). Then, create SSH key pair and use it for pushing your changes to your remote repository.
+Your first task is to setup SSH access to Github, fork PA165 project and clone it to your environment.
+ 1. Generate your personal SSH key (https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#platform-linux)
+ 2. Add your new SSH key to Github account (https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
+ 3. Click Fork button in top right corner and Fork the repository under your account.
+ 4. Copy link from Clone or download popup (choose use SSH) and Clone it to your environment.
+Command example, replace <repository_name> by your repository: 
+```
+git clone git@github.com:<repository_name>/PA165.git PA165-fork
+```
+Then you should setup your local repository to use original PA165 project for pull and your forked project for push (https://help.github.com/articles/configuring-a-remote-for-a-fork/).
 
 **Task 02 (Git/Maven)**  
 Switch to **seminar-git-mvn** branch.
